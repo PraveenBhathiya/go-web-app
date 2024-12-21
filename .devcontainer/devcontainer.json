@@ -1,0 +1,11 @@
+{
+    "name": "Go Dev Container",
+    "image": "golang:1.20",
+    "features": {
+        "ghcr.io/devcontainers/features/go:1": {}
+    },
+    "postCreateCommand": "go mod tidy",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind"
+    ]
+}
